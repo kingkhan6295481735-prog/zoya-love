@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff4f9a">
+<title>For Zoya 💗</title>
+<style>
+:root{--pink:#ff4f9a;--deep:#8e2358;--pale:#fff0f7;--glass:rgba(255,255,255,.88)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#722347;font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 15% 10%,#ffe0ef,transparent 30%),linear-gradient(150deg,#fff4fa,#ffd2e7 55%,#fff0f7);overflow-x:hidden}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px;background:rgba(65,8,39,.93);backdrop-filter:blur(10px)}
+nav a{color:#fff;text-decoration:none;padding:9px 13px;border-radius:22px;font:14px Arial,sans-serif}
+nav a:hover{background:#ff4f9a}
+.hero{min-height:80vh;display:grid;place-items:center;text-align:center;padding:70px 18px 55px;position:relative;background:linear-gradient(135deg,rgba(53,7,35,.86),rgba(157,25,90,.62)),radial-gradient(circle at top,#ff8ec4,#3d092d);color:#fff;isolation:isolate}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#ff8cbd;font-size:clamp(80px,20vw,180px);opacity:.22;z-index:-1}
+.hero:before{left:4%;top:8%;transform:rotate(-18deg)}.hero:after{right:5%;bottom:5%;transform:rotate(16deg)}
+.crown{font-size:42px;margin-bottom:5px}
+.hero h1{font-size:clamp(52px,12vw,100px);line-height:1;margin:8px 0;color:#ffacd3;text-shadow:0 0 22px #ff2c91}
+.hero p{font-size:clamp(17px,4vw,23px);max-width:600px;line-height:1.6;margin:16px auto}
+.pill{display:inline-block;background:#ff4f9a;color:#fff;padding:13px 23px;border-radius:30px;text-decoration:none;border:0;font-size:16px;cursor:pointer;box-shadow:0 6px 22px #ff4f9a55}
+main{max-width:1000px;margin:auto;padding:24px 14px 45px}
+.card{background:var(--glass);border:1px solid #ffafd0;border-radius:25px;padding:clamp(20px,5vw,36px);margin:22px 0;box-shadow:0 12px 35px #a32d6420}
+h2{text-align:center;color:#d52e7b;font-size:clamp(27px,6vw,38px);margin:0 0 20px}
+.letter{font-size:18px;line-height:1.9;white-space:pre-line;text-align:center}
+.hidden{display:none!important}
+.center{text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:16px;border:2px solid #ff9bc5}
+.placeholder{min-height:145px;border-radius:16px;background:linear-gradient(135deg,#ffd2e6,#fff5fa);display:grid;place-items:center;text-align:center;font-size:38px;border:1px dashed #ff80b7}
+.small{font:14px/1.6 Arial,sans-serif;color:#8d4667}
+.surprise-box{background:linear-gradient(135deg,#5b1039,#a51e63);color:#fff;border-radius:22px;padding:26px;text-align:center}
+.surprise-box h2{color:#ffacd3}
+footer{text-align:center;padding:28px 15px;background:#4a0c30;color:#ffd5e8}
+.heart-pop{position:fixed;bottom:-30px;z-index:20;pointer-events:none;animation:floatUp 3.8s ease-in forwards;font-size:24px}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:480px){nav{gap:2px}nav a{padding:8px;font-size:12px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery img{height:160px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">🏠 Home</a><a href="#letter">💌 Letter</a><a href="#memories">📸 Memories</a><a href="#surprise">🎁 Surprise</a>
+</nav>
+<section class="hero" id="home">
+<div>
+<div class="crown">👑</div>
+<p>To My Princess</p>
+<h1>Zoya ♡</h1>
+<p>You make ordinary moments feel a little more magical. This tiny corner of the internet is just for you. 🌙</p>
+<a class="pill" href="#letter">Open your letter 💌</a>
+</div>
+</section>
+<main>
+<section class="card" id="letter">
+<h2>Dear Zoya 💗</h2>
+<div class="letter">Aap meri life ki bahut special insaan ho. 💗
+
+Aapki smile mere din ko beautiful bana deti hai, aur aapki khushi mere liye bahut important hai. Main chahta hoon ki aap hamesha khush raho, aapke saare dreams poore hon aur aapki zindagi pyaar aur sukoon se bhari rahe.
+
+Aap jaisi ho, waise hi bahut precious ho. Thank you meri life mein itni saari khushiyan laane ke liye. 🌷
+
+<strong>With lots of love, just for you. 💌</strong></div>
+<div class="center" style="margin-top:22px"><button class="pill" onclick="makeHearts()">Send you a little love 💖</button></div>
+</section>
+<section class="card" id="memories">
+<h2>Our Memories 📸</h2>
+<p class="center">Add photos from your phone to see them here. They stay on this device unless you separately upload them somewhere.</p>
+<div class="center" style="margin:18px"><label class="pill" for="photoInput">Choose photos 💕</label><input id="photoInput" type="file" accept="image/*" multiple hidden></div>
+<div class="gallery" id="gallery">
+<div class="placeholder">🌹<br><span style="font-size:14px">Your memories go here</span></div>
+<div class="placeholder">🧸<br><span style="font-size:14px">Add your favourite photos</span></div>
+</div>
+</section>
+<section class="card" id="surprise">
+<div class="surprise-box">
+<h2>A Little Surprise 🎁</h2>
+<p>Ready for a tiny reminder that you are special?</p>
+<button class="pill" onclick="reveal()">Open your surprise ✨</button>
+<div id="surpriseMessage" class="hidden">
+<div style="font-size:54px;margin-top:18px">💐💗🌙</div>
+<h3 style="font-size:25px">You deserve all the happiness, Zoya.</h3>
+<p>No matter how busy life gets, I hope you always find a reason to smile. Keep shining, princess. 👑</p>
+</div>
+</div>
+</section>
+<section class="card center">
+<h2>One little wish 🌸</h2>
+<p class="letter">May your days be soft, your dreams come true, and your heart always feel loved.</p>
+<p style="font-size:28px">♡ Zoya ♡</p>
+</section>
+</main>
+<footer>Made with 💗 just for Zoya · A little page full of love</footer>
+<script>
+function makeHearts(){
+  const symbols=['💗','💕','💖','🌸','✨'];
+  for(let i=0;i<18;i++){
+    const el=document.createElement('span');
+    el.className='heart-pop';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=Math.random()*100+'vw';el.style.animationDelay=(Math.random()*.8)+'s';
+    document.body.appendChild(el);setTimeout(()=>el.remove(),4500);
+  }
+}
+function reveal(){document.getElementById('surpriseMessage').classList.remove('hidden');makeHearts();}
+document.getElementById('photoInput').addEventListener('change',function(){
+  const gallery=document.getElementById('gallery');gallery.innerHTML='';
+  [...this.files].forEach(file=>{
+    const img=document.createElement('img');img.alt='Memory photo';img.src=URL.createObjectURL(file);gallery.appendChild(img);
+  });
+});
+</script>
+</body>
+</html>
